@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+     <t t-inherit="mail.MessagingMenu" t-inherit-mode="extension" owl="1">
+         <xpath expr="//t[@t-call='mail.MessagingMenu.content']" position="attributes">
+             <attribute name="t-call"></attribute>
+         </xpath>
+         <xpath expr="//i[hasclass('fa-comments')]" position="replace"></xpath>
+         <xpath expr="//span[hasclass('o-mail-MessagingMenu-counter')]" position="replace"></xpath>
+     </t>
+</templates>
